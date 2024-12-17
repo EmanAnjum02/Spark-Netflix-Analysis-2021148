@@ -29,17 +29,9 @@ Spark speeds things up by storing data in **RAM** (memory) instead of writing it
 
 An **RDD** is a collection of data that Spark can process in parallel. It’s **fault-tolerant**, which means if something goes wrong, Spark can rebuild the data from the original source. Think of an RDD as a reliable, distributed collection that can be worked on simultaneously by multiple machines.
 
-### 🧠 **Lazy Evaluation**
-
-Spark doesn’t do anything until it absolutely has to. It waits until an action (like getting the result) is requested before it starts processing the data. This is called **lazy evaluation** and it helps Spark figure out the best way to run the tasks efficiently before actually doing any work.
-
 ### 🌍 **Fault Tolerance**
 
 Spark is great at **recovering from errors**. If a part of the data is lost or something goes wrong, Spark can rebuild the lost data from the original source. It makes sure your analysis keeps running smoothly without any data getting lost.
-
-### 🏗️ **DAG (Directed Acyclic Graph)**
-
-Spark uses a **DAG** (a diagram that shows the steps in a task) to figure out the best way to run your operations. This helps Spark run tasks in the best order to get the results you want, without unnecessary steps, and also allows it to recover quickly if there’s a problem.
 
 ---
 
@@ -124,4 +116,3 @@ Feel free to reach out or open issues if you run into any problems! We'd love to
 
 ---
 
-This README incorporates a friendly tone and uses more dynamic and fun elements like emojis and direct calls to action. You can also add **badges** (e.g., build status, license type) at the top or throughout to make the README more visually appealing. This kind of format is particularly well-suited for projects where you want to engage the community or make the documentation less formal while still covering all necessary technical details.
